@@ -1,10 +1,11 @@
 import Link from "next/link";
+import styles from './Nav.module.css';
 
 export default function Nav() {
   return (
-    <nav style={{ display: "flex", gap: "16px", marginBottom: "1rem" }}>
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
+    <nav className={styles.navContainer}>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
     </nav>
   );
 }
